@@ -1,5 +1,5 @@
 PYTHON = python3
-PROJECT_DIR = src/myproject
+PROJECT_DIR = src/pyqt5-rps
 PROJECT_MAIN = ${PROJECT_DIR}/pyqt5-rps.py
 
 
@@ -22,11 +22,13 @@ help:
 
 setup: clean
 	@echo "Setting up project"
+	sudo apt-get install python3-pyqt5 qtcreator
 	${PYTHON} -m pip install -r requirements.txt
 	${PYTHON} -m pip install -r ${PROJECT_DIR}/requirements.txt
 
 clean:
 	@echo "Cleaning project"
+	rm --force *.bin
 	rm --force --recursive *.pyc
 	rm --force --recursive *.pyo
 	rm --force --recursive build/
