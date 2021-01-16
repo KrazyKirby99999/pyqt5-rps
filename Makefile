@@ -29,11 +29,11 @@ setup: clean
 clean:
 	@echo "Cleaning project"
 	rm --force *.bin
-	rm --force --recursive *.pyc
-	rm --force --recursive *.pyo
+	find . -name '*.pyc' -exec rm --force {} +
+	find . -name '*.pyo' -exec rm --force {} +
+	find . -name '*.egg-info' -exec rm --force {} +
 	rm --force --recursive build/
 	rm --force --recursive dist/
-	rm --force --recursive *.egg-info
 	rm --force --recursive *.build/
 	rm --force --recursive *.dist/
 
