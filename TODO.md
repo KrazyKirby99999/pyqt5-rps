@@ -1,0 +1,1 @@
+Add correct packaging commands to Makefile
