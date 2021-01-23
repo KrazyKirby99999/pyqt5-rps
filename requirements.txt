@@ -1,3 +1,4 @@
 nuitka
 twine
 nose2
+pyqt5
