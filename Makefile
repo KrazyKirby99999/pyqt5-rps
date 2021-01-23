@@ -51,7 +51,6 @@ upload: clean
 
 standalone: clean
 	@echo "Building standalone application"
-	${PYTHON} -m  nuitka --standalone ${PROJECT_MAIN}
 
 install: clean
 	@echo "Installing project"
