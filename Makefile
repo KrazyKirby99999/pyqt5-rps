@@ -42,7 +42,6 @@ test:
 
 build: clean
 	@echo "Building project"
-	${PYTHON} -m nuitka ${PROJECT_MAIN}
 
 upload: clean
 	@echo "Uploading project"
